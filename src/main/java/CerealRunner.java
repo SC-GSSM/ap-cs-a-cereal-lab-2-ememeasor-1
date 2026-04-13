@@ -71,7 +71,7 @@ public class CerealRunner
       //Add your solution to Question 3 here.
       double netCarbs=0;
       if(c.getCarbs()-c.getFiber()>0){
-         netCarbs= c.getCarbs()-c.getFiber();
+         netCarbs= (c.getCarbs()-c.getFiber())/c.getCups();
       }
       return netCarbs; 
    }
