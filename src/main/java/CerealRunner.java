@@ -48,12 +48,12 @@ public class CerealRunner
     
    public static Cereal highestPercentFiber()
    {
-      int maxPercent=0;
+      double maxPercent=0;
       int index=0;
       //Add your solution to Question 2 here.
       for(int i=0; i<cereals.size(); i++){
-         int tempCal=cereals.get(i).getCalories();
-         int tempFiber=cereals.get(i).getFiber();
+         double tempCal=cereals.get(i).getCalories();
+         double tempFiber=cereals.get(i).getFiber();
          if((tempFiber/tempCal)>maxPercent){
             maxPercent=(tempFiber/tempCal);
             index=i;
@@ -151,7 +151,7 @@ public class CerealRunner
       c.getName().equals("Cocoa Puffs")) 
    { 
        System.out.println("\nCereal: " + c.getName() + ", NetCarbs: "    
-                           + findNetCarbs(c)); 
+                           + findNetCarbsPerCup(c)); 
    } 
 }
       
