@@ -25,11 +25,10 @@ public class CerealRunner
    {
       //Add your solution to Question 1 here.
       ArrayList<Cereal> apples= new ArrayList<Cereal>();
-      for(Cereal a: cereals ){
-         double tempCarbs=a.getCarbs();
+      for(Cereal a: cereals){
             double temp= a.getCarbs()/a.getCups();
          
-         if(temp> min && temp<max){
+         if(temp>= min && temp<=max){
             apples.add(a);
          }
          
@@ -152,7 +151,7 @@ public class CerealRunner
       c.getName().equals("Cocoa Puffs")) 
    { 
        System.out.println("\nCereal: " + c.getName() + ", NetCarbs: "    
-                           + findNetCarbsPerCup(c)); 
+                           +c.getCarbs()); 
    } 
 }
      /* Question 4 Answer: The value of netCarbs for All-Bran with Extra Fiber is invalid because the value of fiber is greater than the value of carbohydrates. This leads to the value of NetCarbs being 0 which is technically incorrect.  */ 
